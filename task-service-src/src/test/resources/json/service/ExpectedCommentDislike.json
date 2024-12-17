@@ -1,0 +1,13 @@
+{
+  "id": "00000000-0000-0000-0000-000000000001",
+  "text": "Test comment",
+  "authorName": "Test Author",
+  "actual": true,
+  "taskId": "69f1e0d6-7e0a-4f7b-9f5f-9f5f9f5f9f5f",
+  "like": 0,
+  "dislike": 1,
+  "moderated": false,
+  "deleted": false,
+  "parentId": "00000000-0000-0000-0000-000000000002",
+  "authorId": "00000000-0000-0000-0000-000000000001"
+}

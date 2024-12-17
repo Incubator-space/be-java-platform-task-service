@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="create_table_dislikes_comments" author="Anna Tebenkova">
+        <createTable tableName="comments_to_dislikes">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="comment_id" type="uuid">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="uuid">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="fkCommentsId" author="Anna Tebenkova">
+        <addForeignKeyConstraint baseColumnNames="comment_id" baseTableName="comments_to_dislikes"
+                                 constraintName="fk_comments_comment_id" referencedColumnNames="id"
+                                 referencedTableName="comments"/>
+    </changeSet>
+</databaseChangeLog>

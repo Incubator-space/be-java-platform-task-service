@@ -1,0 +1,4 @@
+{
+  "task": "Как создать простой REST-контроллер в Spring Boot, который возвращает строку \"Hello, World!\" при обращении к корневому URL?",
+  "solution": "\n\n@RestController\npublic class HelloController {\n\n    @GetMapping(\"/\")\n    public String hello() {\n        return \"Hello, World!\";\n    }\n}"
+}

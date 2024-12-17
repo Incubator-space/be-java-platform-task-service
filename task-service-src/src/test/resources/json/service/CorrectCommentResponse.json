@@ -1,0 +1,13 @@
+{
+  "id": "f34348d9-8a0b-4e95-8ea4-ff3b8e387c4a",
+  "text": "Test True",
+  "authorName": "Nikita",
+  "actual": true,
+  "taskId": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "like": 0,
+  "dislike": 0,
+  "moderated": true,
+  "deleted": true,
+  "parentId": "b3b29ef2-6b0d-4cc7-a9f8-acee2ef3c117",
+  "authorId": "b3b29ef2-6b0d-4cc7-a9f8-acee2ef3c117"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+  "title": "string",
+  "text": "string",
+  "topicId": "97b608a9-302e-4387-a5f4-fd35969cdc21",
+  "attachments": [
+    "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+  ],
+  "archived": true,
+  "solutions": [
+    {
+      "id": "e6e9d88a-9b63-468a-aec3-b7a11de27af8",
+      "taskId": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+      "text": "string",
+      "correct": true
+    }
+  ]
+}

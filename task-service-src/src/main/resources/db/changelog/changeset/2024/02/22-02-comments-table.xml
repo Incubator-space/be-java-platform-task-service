@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="create_table_comments" author="Sergei_Akopov">
+        <createTable tableName="comments">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="text" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="author_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="actual" type="boolean" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="task_id" type="uuid">
+                <constraints nullable="false"/>
+            </column>
+            <column name="likes" type="integer" defaultValue="0"/>
+            <column name="dislikes" type="integer" defaultValue="0"/>
+            <column name="moderated" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+            <column name="deleted" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+            <column name="parent_id" type="uuid"/>
+            <column name="created" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="timestamp"/>
+            <column name="created_by" type="uuid">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_by" type="uuid"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="fkTaskId" author="Sergei_Akopov">
+        <addForeignKeyConstraint baseColumnNames="task_id" baseTableName="comments"
+                                 constraintName="fk_tasks_task_id" referencedColumnNames="id"
+                                 referencedTableName="tasks"/>
+    </changeSet>
+</databaseChangeLog>

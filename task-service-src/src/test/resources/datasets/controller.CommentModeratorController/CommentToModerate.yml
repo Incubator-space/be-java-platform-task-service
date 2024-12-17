@@ -1,0 +1,23 @@
+comments:
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    task_id: 69f1e0d6-7e0a-4f7b-9f5f-9f5f9f5f9f5f
+    moderated: false
+    text: text
+    author_name: "author"
+    actual: true
+    likes: 0
+    dislikes: 0
+    deleted: false
+    created: 2024-04-11T12:00:00Z
+    updated: 2024-04-11T12:00:00Z
+    created_by: b3b29ef2-6b0d-4cc7-a9f8-acee2ef3c117
+    updated_by: b3b29ef2-6b0d-4cc7-a9f8-acee2ef3c117
+tasks:
+  - id: 69f1e0d6-7e0a-4f7b-9f5f-9f5f9f5f9f5f
+    title: "title"
+    text: "text"
+    is_archived: false
+    created: "2024-02-18 00:51:57.819000"
+    updated: null
+    created_by: "47de21e0-8b70-40b7-8a33-ee9395b9fc82"
+    updated_by: null

@@ -1,0 +1,29 @@
+comments:
+  - id: 123e4567-e89b-12d3-a456-426614174000
+    task_id: f47ac10b-58cc-4372-a567-0e02b2c3d479
+    moderated: true
+    text: "Vegetaaa"
+    author_name: "Goku"
+    actual: true
+    likes: 0
+    dislikes: 0
+    deleted: false
+    created: 2024-04-11T12:00:00Z
+    updated: 2024-04-11T12:00:00Z
+    created_by: 550e8400-e29b-41d4-a716-446655440000
+    updated_by: 550e8400-e29b-41d4-a716-446655440000
+    parent_id: 70850378-7d3c-4f45-91b7-942d4dfbbd43
+tasks:
+  - id: f47ac10b-58cc-4372-a567-0e02b2c3d479
+    title: "testTitle"
+    text: "text"
+    is_archived: false
+    created: "2023-07-11 11:42:25.085893"
+    updated: null
+    created_by: "968ab300-5711-4a2d-941e-4a74a2ba0aab"
+    updated_by: null
+comments_to_likes:
+  - id: 2ceee911-31c9-4f4a-868a-6cb9f7e4dbe3
+    comment_id: 123e4567-e89b-12d3-a456-426614174000
+    created_by: 550e8400-e29b-41d4-a716-446655440000
+    created: 2024-04-11T12:00:00Z

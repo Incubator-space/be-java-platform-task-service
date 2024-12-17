@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="db/changelog/changeset/2024/02/10-02-task-table.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changeset/2024/02/22-02-comments-table.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changeset/2024/02/29-02-taskToAttachment-table.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changeset/2024/02/29-02-tasks_to_users-table.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/changeset/2024/03/20-03-tasks_to_topic-table.xml" relativeToChangelogFile="false"/>
+    <include file="/db/changelog/changeset/2024/04/03-04-solutions_to_task-table.xml" relativeToChangelogFile="false"/>
+    <include file="/db/changelog/changeset/2024/04/15-04-comments_to_attachments-table.xml" relativeToChangelogFile="false"/>
+    <include file="/db/changelog/changeset/2024/04/25-04-comments_to_likes-table.xml" relativeToChangelogFile="false"/>
+    <include file="/db/changelog/changeset/2024/05/11-05-comments_to_dislikes-table.xml" relativeToChangelogFile="false"/>
+
+</databaseChangeLog>

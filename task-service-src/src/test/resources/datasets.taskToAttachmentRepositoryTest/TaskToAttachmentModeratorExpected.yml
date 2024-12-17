@@ -1,0 +1,4 @@
+task_to_attachment:
+  - id: regex:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[4][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}
+    task_id: 123e4567-e89b-12d3-a456-426614174000
+    attachment_id: 789e0123-4567-89ab-cdef-0123456789ac

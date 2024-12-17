@@ -1,0 +1,7 @@
+{
+  "taskId": "e6e9d88a-9b63-468a-aec3-b7a11de27af8",
+  "solution": "@RestController\n public class HelloController {\n @GetMapping(\"/\")\n public String hello() {\n return \"Hello, World!\";\n }\n}",
+  "solutionIds": [
+    "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+  ]
+}

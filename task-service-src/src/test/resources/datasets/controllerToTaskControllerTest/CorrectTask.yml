@@ -1,0 +1,38 @@
+tasks:
+  - id: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+    title: "string"
+    text: "string"
+    is_archived: true
+    created: 2024-04-17 14:55:42.000000
+    updated: 2024-04-17 14:55:44.000000
+    created_by: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+    updated_by: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+task_to_topic:
+  - id: 97b608a9-302e-4387-a5f4-fd35969cdc21
+    task_id: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+    topic_id: 97b608a9-302e-4387-a5f4-fd35969cdc21
+    created: 2024-04-17 14:58:25.000000
+    updated: 2024-04-17 14:58:27.000000
+task_to_attachment:
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    task_id: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+    attachment_id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    created: 2024-04-17 14:57:03.000000
+    updated: 2024-04-17 14:57:05.000000
+solutions_to_task:
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    task_id: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+    text: "string"
+    correct: true
+    created: 2024-04-17 14:56:21.000000
+    updated: 2024-04-17 14:56:22.000000
+    created_by: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    updated_by: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+  - id: 3b7b60a8-0f6b-4057-8cc2-19bcc0fabc32
+    task_id: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+    text: "string"
+    correct: false
+    created: 2024-04-17 14:56:21.000000
+    updated: 2024-04-17 14:56:22.000000
+    created_by: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    updated_by: 497f6eca-6276-4993-bfeb-53cbbbba6f08

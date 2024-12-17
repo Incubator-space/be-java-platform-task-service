@@ -1,0 +1,14 @@
+[
+  {
+    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+    "taskId": "e6e9d88a-9b63-468a-aec3-b7a11de27af8",
+    "text": "string",
+    "correct": true
+  },
+  {
+    "id": "3b7b60a8-0f6b-4057-8cc2-19bcc0fabc32",
+    "taskId": "e6e9d88a-9b63-468a-aec3-b7a11de27af8",
+    "text": "string",
+    "correct": false
+  }
+]

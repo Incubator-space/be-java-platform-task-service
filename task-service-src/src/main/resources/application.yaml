@@ -1,0 +1,77 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: task-service
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:${DATABASE_URL:postgresql://localhost:5432/postgres}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+    open-in-view: false
+
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog.xml
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://keycloak.migration.it-mentor.space/realms/ITM-Platform
+
+  kafka:
+    bootstrap-servers: ${KAFKA_HOST:localhost:9092}
+    consumer:
+      group-id: task-service-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: earliest
+      auto-commit-interval: 100ms
+      properties:
+        spring.json.trusted.packages: "*"
+        specific.avro.reader: true
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    topic:
+      task-events: task-events
+      task-comment-events: task-comment-events
+
+keycloak:
+  realm: ITM-Platform
+  auth-server-url: https://keycloak.migration.it-mentor.space
+  token-uri: https://keycloak.migration.it-mentor.space/realms/ITM-Platform/protocol/openid-connect/token
+  client:
+    service-client:
+      client-id: inner-rest
+      client-secret: ${SECRET:RbjlJUM4CsFeqrhJST5Z5v5YPErlaYZw}
+
+adapter:
+  chatGPT:
+    connectionUrl: https://api.migration.it-mentor.space/chatgpt-adapter/api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+springdoc:
+  swagger-ui:
+    config-url: /${spring.application.name}/v3/api-docs/swagger-config # should be without service suffix in application-local.yaml
+    url: /${spring.application.name}/v3/api-docs

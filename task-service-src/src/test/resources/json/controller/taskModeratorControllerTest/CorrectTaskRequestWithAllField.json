@@ -1,0 +1,15 @@
+{
+  "title": "1.1.2 Spring Boot",
+  "text": "Это текст задачи про Spring Boot",
+  "topicId": "97b608a9-302e-4387-a5f4-fd35969cdc21",
+  "attachments": [
+    "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+  ],
+  "solutions": [
+    {
+      "text": "string",
+      "correct": true
+    }
+  ]
+}
+

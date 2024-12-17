@@ -1,0 +1,64 @@
+tasks:
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f78
+    title: "string"
+    text: "string"
+    is_archived: false
+    created: 2024-04-17 14:55:42.000000
+    created_by: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f79
+    title: "string"
+    text: "string"
+    is_archived: false
+    created: 2024-04-17 14:55:42.000000
+    created_by: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f77
+    title: "string"
+    text: "string"
+    is_archived: false
+    created: 2024-04-17 14:55:42.000000
+    created_by: e6e9d88a-9b63-468a-aec3-b7a11de27af8
+task_to_topic:
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f78
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f78
+    topic_id: 97b608a9-302e-4387-a5f4-fd35969cdc21
+    created: 2024-04-17 14:58:25.000000
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f79
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f79
+    topic_id: 97b608a9-302e-4387-a5f4-fd35969cdc21
+    created: 2024-04-17 14:58:25.000000
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f77
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f77
+    topic_id: 97b608a9-302e-4387-a5f4-fd35969cdc22
+    created: 2024-04-17 14:58:25.000000
+task_to_attachment:
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f78
+    attachment_id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    created: 2024-04-17 14:57:03.000000
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f09
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f79
+    attachment_id: 497f6eca-6276-4993-bfeb-53cbbbba6f09
+    created: 2024-04-17 14:57:03.000000
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f07
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f77
+    attachment_id: 497f6eca-6276-4993-bfeb-53cbbbba6f07
+    created: 2024-04-17 14:57:03.000000
+solutions_to_task:
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f78
+    text: "string"
+    correct: true
+    created: 2024-04-17 14:56:21.000000
+    created_by: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f09
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f79
+    text: "string"
+    correct: true
+    created: 2024-04-17 14:56:21.000000
+    created_by: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+  - id: 497f6eca-6276-4993-bfeb-53cbbbba6f07
+    task_id: 497f6eca-6276-4993-bfeb-53cbbbba6f77
+    text: "string"
+    correct: true
+    created: 2024-04-17 14:56:21.000000
+    created_by: 497f6eca-6276-4993-bfeb-53cbbbba6f08

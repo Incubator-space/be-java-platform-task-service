@@ -1,0 +1,30 @@
+tasks:
+  - id: 00000000-0000-0000-0000-000000000001
+    title: "test"
+    text: "test"
+    is_archived: false
+
+  - id: "regex:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[4][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}"
+    title: "1.1.2 Spring Boot"
+    text: "Это текст задачи про Spring Boot"
+    is_archived: false
+
+task_to_topic:
+  - id: 00000000-0000-0000-0000-000000000001
+    task_id: 00000000-0000-0000-0000-000000000001
+    topic_id: 97b608a9-302e-4387-a5f4-fd35969cdc21
+
+  - id: "regex:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[4][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}"
+    task_id: "regex:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[4][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}"
+    topic_id: 97b608a9-302e-4387-a5f4-fd35969cdc21
+
+task_to_attachment:
+  - id: "regex:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[4][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}"
+    attachment_id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+
+solutions_to_task:
+  - id: "regex:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[4][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}"
+    text: "string"
+    correct: true
+
+
